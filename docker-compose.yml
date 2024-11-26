@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+
+  redis:
+    container_name: redisdb
+    image: redis:alpine
+    command: redis-server /usr/local/etc/redis/redis.conf --appendonly yes --replica-read-only no
+    restart: always
+    ports:
+      - "16379:6379"
+    volumes:
+      - "./data:/data"
+
+
+

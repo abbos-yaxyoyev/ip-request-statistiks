@@ -1,0 +1,13 @@
+/.git
+
+data
+dist
+typings
+
+node_modules
+public
+.env
+*.pem
+
+.DS_Store
+.vscode
